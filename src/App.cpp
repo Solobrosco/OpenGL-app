@@ -19,7 +19,7 @@ App::App(int argc, char** argv, int width, int height, const char* title): GlutA
 
     pic = new TexRect("textures/mushroom.png", -0.125, 0.125, 0.25, 0.25);
 
-    text = new TextBox("Nikko's Lab", -0.9, 0.9, GLUT_BITMAP_HELVETICA_18, 1,1,1, 800);
+    text = new TextBox("Game Title",-0.3, 0.25, GLUT_BITMAP_HELVETICA_18, 1,1,1, 500);
 
     btn0 = new Button(-0.3, -1+0.25, 0.2, 0.2);
     btn1 = new Button(0.1, -1+0.25, 0.2, 0.2);
