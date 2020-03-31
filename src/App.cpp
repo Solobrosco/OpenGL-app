@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <App.h>
+#include <Circle.h>
 
 static App* singleton;
 
@@ -27,6 +28,7 @@ App::App(int argc, char** argv, int width, int height, const char* title): GlutA
     btn0->func = doSomething;
     btn1->func = circlePath;
 
+    cicl = new Circle(0,0,1,0,1,0);
 
     animating = false;
     circle = false;
@@ -48,6 +50,8 @@ void App::draw() const {
 
     btn0->draw();
     btn1->draw();
+
+    cicl->draw();
 
     pic->draw(0);
 }
@@ -108,5 +112,6 @@ App::~App(){
     delete text;
     delete btn0;
     delete btn1;
+    delete cicl;
     std::cout << "Exiting..." << std::endl;
 }

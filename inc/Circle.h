@@ -2,6 +2,7 @@
 #define CIRCLE_H
 
 #include <Shape.h>
+#include <cmath>
 
 class Circle : public Shape{
 protected:
@@ -18,7 +19,7 @@ public:
     Circle();
     Circle(float, float, float, float, float, float);
 
-    void draw();
+    void draw() const;
 
     // future implementations
     // getX, setX, getY, setY, setColor(r,g,b), getColor(), 

@@ -7,6 +7,7 @@
 #include <TexRect.h>
 #include <TextBox.h>
 #include <Button.h>
+#include <Circle.h>
 
 
 class App: public GlutApp {
@@ -15,6 +16,7 @@ class App: public GlutApp {
 
     Button* btn0;
     Button* btn1;
+    Circle* cicl; 
 
     TexRect* pic;
 
