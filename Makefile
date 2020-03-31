@@ -1,6 +1,7 @@
 # ================================== #
 #  GlutApp Makefile                  #
 #  Written by Angelo Kyrilov         #
+#  Edited by Nikko Solon	         #
 #                                    #
 #  Computer Science and Engineering  #
 #  University of California, Merced  #
@@ -9,7 +10,6 @@
 
 # Specify the compiler
 CC = g++
-
 
 # Specify compiler flags
 ifeq ($(strip $(shell uname)), Darwin)
@@ -28,7 +28,7 @@ TDIR = test
 PDIR = scratchpad
 
 # Specify name of app executable
-PROGRAM = glutapp
+PROGRAM = Game
 
 # Specify name of test suite executable
 TEST = test
@@ -69,6 +69,8 @@ $(DDIR)/SOIL/$(ODIR)/%.o: $(DDIR)/SOIL/%.c
 
 $(PROGRAM): $(OBJ) $(SOIL)
 	$(CC) $^ -o $(BDIR)/$@ $(CFLAGS)
+	$(echo "hello")
+	$(echo $(OBJ))
 
 $(TEST): $(TESTOBJ) 
 	$(CC) $^ -o $(BDIR)/$@ $(CFLAGS)

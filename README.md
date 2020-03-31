@@ -1,5 +1,5 @@
 # OpenGL-app
-This repository holds objects for an OpenGL apps.
+This repository holds objects for an OpenGL app.
 ## Setup
 1. Clone repository using **HTTPS**
 	```sh
@@ -19,7 +19,7 @@ This repository holds objects for an OpenGL apps.
 	```
 4. Run OpenGL-app
     ```
-    ./bin/glutapp
+    ./bin/Game
     ```
 
 # Project Title
