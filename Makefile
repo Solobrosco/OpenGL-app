@@ -69,8 +69,6 @@ $(DDIR)/SOIL/$(ODIR)/%.o: $(DDIR)/SOIL/%.c
 
 $(PROGRAM): $(OBJ) $(SOIL)
 	$(CC) $^ -o $(BDIR)/$@ $(CFLAGS)
-	$(echo "hello")
-	$(echo $(OBJ))
 
 $(TEST): $(TESTOBJ) 
 	$(CC) $^ -o $(BDIR)/$@ $(CFLAGS)
